@@ -1,0 +1,16 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
+services:
+  dashboardfinanceiro:
+    image: dashboardfinanceiro
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5277:5277
+
+
+# create connection string
+# docker run -e "ConnectionStrings:DefaultConnection=Server=localhost;Database=DashboardFinanceiro" -p 5277:5277 dashboardfinanceiro

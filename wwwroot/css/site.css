@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+  position: relative;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#sidebar-item:hover {
+  width: 292px;
+  border-top-left-radius: 80px 80px;
+  border-bottom-left-radius: 80px 80px;
+  background-color: hsl(332, 100%, 50%);
+  color: black;
+}
+
+#sidebar-item .sidebar-link {
+  color: rgb(255, 250, 250);
+}
+
+#sidebar-item .sidebar-link:hover {
+  color: black;
+}
+
+.card {
+  width: 100px;
+}
+
+#navbar {
+  border-bottom: 2px solid lightgray;
+}
+
+#user-info p {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+#user-image {
+  width: 120px;
+}
+
+.card-value {
+  font-size: 40px;
+}
+
+.card-title {
+  width: 150px;
+}
+
+#card-icon {
+  width: 80px;
+  position: relative;
+  left: 240px;
+  bottom: 70px;
+}
+
+canvas {
+  width: 560px;
+  height: 350px;
+  border: 1px solid lightgray;
+  background-color: lavender;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+#barchar {
+  min-height: 250px;
+  height: 250px;
+  max-height: 250px;
+  max-width: 100%;
+}

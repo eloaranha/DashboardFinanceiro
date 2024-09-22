@@ -1,0 +1,95 @@
+﻿<!--Index.html-->
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/site.js"></script>
+    <link rel="stylesheet" href="~/css/site.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <ul class="list-unstyled">
+                <li><a href="../api/dashboard">Dashboard</a></li>
+                <li><a href="#"> Customers</a></li>
+                <i class="fas fa-
+                <li><a href="#">Projects</a></li>
+                <li><a href="#"><i class="fas fa-notebook"></i>Orders</a></li>
+                <li><a href="#"><i class="fas fa-warehouse"></i>Inventory</a></li>
+                <li><a href="#"><i class="fas fa-file-invoice"></i>Notas Fiscais</a></li>
+                <li><a href="#"><i class="fas fa-users"></i>Accounts</a></li>
+                <li><a href="#">Tasks</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="content" class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                </button>
+                <a class="navbar-brand mx-3" href="/">
+                <img src="~/img/logo.png" alt="Logo" height="40px">
+                </a>
+
+                <form class="form-inline my-2 my-lg-0 ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item">
+                        <img src="~/img/user_icon.png" alt="User Image" class="rounded-circle" width="30">
+                        <span class="nav-link">@User<br><small>Super Admin</small></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <form id="filterForm">
+                    <div class="form-group">
+                        <label for="mesEmissao">Mês de Emissão</label>
+                        <input type="number" id="mesEmissao" name="mesEmissao" class="form-control" placeholder="Mês de Emissão">
+                    </div>
+                    <div class="form-group">
+                        <label for="statusNota">Status da Nota</label>
+                        <select id="statusNota" name="statusNota" class="form-control">
+                            <option value="">Todos</option>
+                            <option value="Pagamento em atraso">Pagamento em atraso</option>
+                            <option value="Pagamento realizado">Pagamento realizado</option>
+                            <option value="Nota emitida">Nota emitida</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                </form>
+
+                <table class="table mt-3" id="notasFiscaisTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Valor</th>
+                            <th>Status</th>
+                            <th>Data Emissão</th>
+                            <th>Data Pagamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="container">
+                <!-- Dashboard e Gráficos -->
+                <div id="dashboard"></div>
+                <canvas id="inadimplenciaChart"></canvas>
+            </div>
+        </div>
+</div>
+</body>
+<footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="~/js/notasFiscais.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js"></script>
+</footer>

@@ -1,0 +1,49 @@
+/* _content/DashboardFinanceiro/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-luftf7rrli] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-luftf7rrli] {
+  color: #0077cc;
+}
+
+.btn-primary[b-luftf7rrli] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-luftf7rrli], .nav-pills .show > .nav-link[b-luftf7rrli] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-luftf7rrli] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-luftf7rrli] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-luftf7rrli] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-luftf7rrli] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-luftf7rrli] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
