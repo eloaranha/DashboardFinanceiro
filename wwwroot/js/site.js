@@ -20,3 +20,28 @@ new Chart(inadimplenciaChart, {
       }]
   }
 });
+
+$(document).ready(function () {
+  $('#searchForm').on('submit', function (e) {
+      e.preventDefault();
+      var query = $('#searchInput').val().toLowerCase();
+      searchTable(query);
+  });
+
+  function searchTable(query) {
+      $('#notasFiscaisTable tbody tr').each(function () {
+          var rowText = $(this).text().toLowerCase();
+          if (rowText.indexOf(query) === -1) {
+              $(this).hide();
+          } else {
+              $(this).show();
+          }
+      });
+  }
+});
+
+$(document).ready(function () {
+  $('#sidebarCollapse').on('click', function () {
+      $('.sidebar-container').toggleClass('active');
+  });
+});

@@ -10,34 +10,36 @@
 </head>
 <body>
     <div class="d-flex">
+        <div class="sidebar-container hidden">
+                <a class="sidebar-brand" href="/">
+                <img src="~/img/logo.png" class="w-100" alt="Logo">
+                </a>
         <!-- Sidebar -->
         <nav id="sidebar">
             <ul class="list-unstyled">
-                <li><a href="../api/dashboard">Dashboard</a></li>
-                <li><a href="#"> Customers</a></li>
-                <i class="fas fa-
-                <li><a href="#">Projects</a></li>
-                <li><a href="#"><i class="fas fa-notebook"></i>Orders</a></li>
+                <li><a href="../api/dashboard"><i class="fas fa-chart-area"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-building"></i>Customers</a></li>
+                <li><a href="#"><i class="fas fa-clipboard"></i>Projects</a></li>
+                <li><a href="#"><i class="fas fa-book"></i></i>Orders</a></li>
                 <li><a href="#"><i class="fas fa-warehouse"></i>Inventory</a></li>
-                <li><a href="#"><i class="fas fa-file-invoice"></i>Notas Fiscais</a></li>
+                <li><a href="../api/notas"><i class="fas fa-file-invoice"></i>Notas Fiscais</a></li>
                 <li><a href="#"><i class="fas fa-users"></i>Accounts</a></li>
-                <li><a href="#">Tasks</a></li>
             </ul>
         </nav>
-
+</div>
         <!-- Main Content -->
         <div id="content" class="w-100">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                </button>
-                <a class="navbar-brand mx-3" href="/">
-                <img src="~/img/logo.png" alt="Logo" height="40px">
-                </a>
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+            <i class="fas fa-align-justify"></i>
+            </button>
 
-                <form class="form-inline my-2 my-lg-0 ml-auto">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
+
+<form id="searchForm" class="form-inline my-2 my-lg-0 ml-auto">
+    <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
                 <div class="navbar-nav ml-auto">
                     <div class="nav-item">
                         <img src="~/img/user_icon.png" alt="User Image" class="rounded-circle" width="30">

@@ -73,3 +73,4 @@ C:\Users\Eloisa\source\repos\DashboardFinanceiro\DashboardFinanceiro\bin\Debug\n
 C:\Users\Eloisa\source\repos\DashboardFinanceiro\DashboardFinanceiro\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Eloisa\source\repos\DashboardFinanceiro\DashboardFinanceiro\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Eloisa\source\repos\DashboardFinanceiro\DashboardFinanceiro\obj\Debug\net8.0\DashboardFinanceiro.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Eloisa\source\repos\DashboardFinanceiro\DashboardFinanceiro\obj\Debug\net8.0\DashboardFinanceiro.sourcelink.json
