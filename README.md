@@ -31,6 +31,4 @@ Este é um projeto de sistema financeiro que permite o gerenciamento de notas fi
 
 ## Como Executar o Projeto
 
-1. Clone este repositório:
-   ```bash
-   git clone <URL do repositório>
+1. Clone este repositório
